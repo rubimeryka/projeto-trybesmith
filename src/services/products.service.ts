@@ -1,6 +1,5 @@
 import { Product } from '../types/Product';
 import ProductModel from '../database/models/product.model';
-// import { ServiceResponse } from '../types/ServiceResponse';
 
 function createProduct(input: Product): Promise<unknown> {
   const { name, price, orderId } = input;
