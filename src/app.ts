@@ -7,4 +7,6 @@ app.use(express.json());
 
 app.post('/products', productsController.createProduct);
 
+app.get('/products', productsController.getProducts);
+
 export default app;

@@ -8,6 +8,12 @@ function createProduct(input: Product): Promise<unknown> {
   return product;
 }
 
+function getProducts(): Promise<unknown> {
+  const product = ProductModel.findAll();
+  return product;
+}
+
 export default {
   createProduct,
+  getProducts,
 };
